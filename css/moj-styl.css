@@ -4,6 +4,10 @@ body {
     background: linear-gradient(#6495edee,  #F3969Aee) no-repeat fixed bottom right, #F3969A;
 }
 
+.carousel-inner .carousel-caption h1 {
+    color: white !important;
+}
+
 .thumbnail {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -66,7 +70,8 @@ body {
 
 .carousel-inner img {
     width: 100%;
-    height: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 
 .row {
