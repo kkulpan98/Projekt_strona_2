@@ -7,5 +7,6 @@
     <orderEntry type="library" name="jquery-3.4.1" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="flot.samples" level="application" />
+    <orderEntry type="library" name="jquery.fancybox" level="application" />
   </component>
 </module>
