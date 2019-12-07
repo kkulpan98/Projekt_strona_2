@@ -1,7 +1,7 @@
 body {
     transition-duration: 0.5s;
     font-family: Dekko, 'Comic Sans MS', cursive;
-    background: linear-gradient(#6495edee,  #F3969Aee) no-repeat fixed bottom right, #F3969A;
+    background: linear-gradient(#6495edee, #F3969Aee) no-repeat fixed bottom right, #F3969A;
 }
 
 .carousel-inner .carousel-caption h1 {
@@ -76,4 +76,80 @@ body {
 
 .row {
     margin-bottom: 6px;
+}
+
+#slider {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    font-size: 10em;
+}
+
+.slider-photo {
+    margin: auto;
+    display: block;
+    text-align: center;
+    height: 70vh;
+}
+
+.slider-item {
+    display: none;
+    visibility: hidden;
+}
+
+.slider-active {
+    visibility: visible !important;
+    display: block !important;
+}
+
+.slider-next {
+    right: 0;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+}
+
+.slider-prev {
+    left: 0;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 2%;
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+    height: 96%;
+    width: 96%;
+    opacity: 0;
+    border-radius: 7px;
+    transition: .5s ease;
+    background-color: #dd4b39;
+}
+
+.rollover-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+#placeholder {
+    width: 400px;
+    height: 400px;
 }
