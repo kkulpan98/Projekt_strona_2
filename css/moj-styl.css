@@ -93,6 +93,8 @@ body {
     display: block;
     text-align: center;
     height: 70vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 .slider-item {
@@ -110,6 +112,7 @@ body {
     position: absolute;
     z-index: 10;
     bottom: 0;
+    color: white;
     cursor: pointer;
 }
 
@@ -118,6 +121,7 @@ body {
     z-index: 10;
     position: absolute;
     bottom: 0;
+    color: white;
     cursor: pointer;
 }
 

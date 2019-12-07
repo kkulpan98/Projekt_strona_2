@@ -71,6 +71,8 @@ function prepareCalendar() {
             plugins: ['interaction', 'dayGrid'],
             editable: true,
             eventTextColor: '#ffffff',
+            eventBackgroundColor: '#F3969A',
+            eventBorderColor: '#000',
             buttonText: {
                 today: 'dzisiaj',
                 month: 'miesiąc',
