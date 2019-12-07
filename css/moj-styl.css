@@ -110,6 +110,7 @@ body {
     position: absolute;
     z-index: 10;
     bottom: 0;
+    cursor: pointer;
 }
 
 .slider-prev {
@@ -117,6 +118,7 @@ body {
     z-index: 10;
     position: absolute;
     bottom: 0;
+    cursor: pointer;
 }
 
 .overlay {

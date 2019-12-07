@@ -1,7 +1,7 @@
 $(document).ready(function () {
     prepareContent();
     prepareAjax();
-    preparePlot();
+    initTooltips();
 });
 
 function prepareContent() {
@@ -52,6 +52,12 @@ function wyswietlSlajd(aktualny) {
     sliderCurrent.fadeOut(400, function () {
         sliderCurrent.removeClass("slider-active");
         slide.eq(aktualny).fadeIn(1000).addClass("slider-active");
+    });
+}
+
+function initTooltips() {
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
     });
 }
 

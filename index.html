@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <script src="jq/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="jq/jquery.js"></script>
 
     <link href='packages/core/main.css' rel='stylesheet'/>
@@ -19,7 +20,10 @@
     <script src='packages/interaction/main.js'></script>
     <script src='packages/daygrid/main.js'></script>
 
-    <script>prepareCalendar();</script>
+    <script>
+        prepareCalendar();
+        initTooltips();
+    </script>
 
 </head>
 <body>
@@ -92,10 +96,14 @@
                     Kulpan 2019</p>
             </div>
             <div class="col-md-4 text-center">
-                <a class="btn btn-light fa fa-facebook" href="https://www.facebook.com/"></a>
-                <a class="btn btn-light fa fa-twitter" href="https://twitter.com/"></a>
-                <a class="btn btn-light fa fa-google" href="https://www.google.com/"></a>
-                <a class="btn btn-light fa fa-youtube" href="https://www.youtube.com/"></a>
+                <a class="btn btn-light fa fa-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"
+                   href="https://www.facebook.com/"></a>
+                <a class="btn btn-light fa fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"
+                   href="https://twitter.com/"></a>
+                <a class="btn btn-light fa fa-google" data-toggle="tooltip" data-placement="bottom" title="Google"
+                   href="https://www.google.com/"></a>
+                <a class="btn btn-light fa fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"
+                   href="https://www.youtube.com/"></a>
             </div>
         </div>
     </div>
