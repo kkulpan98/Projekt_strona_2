@@ -12,15 +12,15 @@ function prepareContent() {
 
 function initializeOSM() {
     $(document).ready(function () {
-        var map = L.map('map').setView([51.505, -0.09], 13);
+            var map = L.map('map').setView([51.505, -0.09], 13);
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
 
-        L.marker([51.5, -0.09]).addTo(map)
-            .bindPopup('A Tutaj jest Londyn<br> Podobno lubią pomidory, wszyscy lubią pomidory')
-            .openPopup();
+            L.marker([51.5, -0.09]).addTo(map)
+                .bindPopup('A Tutaj jest Londyn<br> Podobno lubią pomidory, wszyscy lubią pomidory')
+                .openPopup();
         }
     );
 }
@@ -212,5 +212,25 @@ function isWhiteSpace(str) {
 
 function isEmpty(str) {
     return (!str || str.length === 0);
+}
+
+function validate_2() {
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
 }
 
