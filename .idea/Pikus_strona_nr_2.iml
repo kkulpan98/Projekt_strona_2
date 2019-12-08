@@ -8,5 +8,6 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="flot.samples" level="application" />
     <orderEntry type="library" name="jquery.fancybox" level="application" />
+    <orderEntry type="library" name="leaflet" level="application" />
   </component>
 </module>

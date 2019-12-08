@@ -10,6 +10,21 @@ function prepareContent() {
     });
 }
 
+function initializeOSM() {
+    $(document).ready(function () {
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([51.5, -0.09]).addTo(map)
+            .bindPopup('A Tutaj jest Londyn<br> Podobno lubią pomidory, wszyscy lubią pomidory')
+            .openPopup();
+        }
+    );
+}
+
 function prepareAjax() {
     $('.nav-a').click(function () {
         $('a').removeClass('selected-item');
@@ -44,7 +59,6 @@ function prepareSlider() {
             aktualny--;
         wyswietlSlajd(aktualny);
     });
-
 }
 
 function wyswietlSlajd(aktualny) {
@@ -199,3 +213,4 @@ function isWhiteSpace(str) {
 function isEmpty(str) {
     return (!str || str.length === 0);
 }
+

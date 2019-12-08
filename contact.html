@@ -18,10 +18,18 @@
                 <input class="form-control" id="phone_number" name="numer_telefonu" placeholder="Numer telefonu..."
                        type="text"><br>
                 <label for="message">Treść wiadmości</label><br>
-                <textarea class="form-control" id="message" name="message" placeholder="Treść Twojej wiadomości..." style="width: 100%"></textarea><br>
+                <textarea class="form-control" id="message" name="message" placeholder="Treść Twojej wiadomości..."
+                          style="width: 100%"></textarea><br>
                 <input class="form-control" type="submit" value="Wyślij">
             </form>
+        </div>
+        <div class="col-sm-6">
+            <div id="map" class="map map-home" style="height: 100%;"></div>
         </div>
     </div>
 
 </article>
+
+<script>
+    initializeOSM();
+</script>

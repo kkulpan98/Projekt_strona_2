@@ -3,6 +3,6 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/index.html" libraries="{jquery, jquery-3.4.1}" />
     <file url="file://$PROJECT_DIR$/jq/jquery.js" libraries="{jquery-3.4.1}" />
-    <file url="PROJECT" libraries="{flot.samples, jquery.fancybox}" />
+    <file url="PROJECT" libraries="{flot.samples, jquery.fancybox, leaflet}" />
   </component>
 </project>
