@@ -222,3 +222,7 @@ function validate_2() {
     }
 }
 
+function showFriendEmailInput() {
+    $('#friend-email-group').toggle();
+}
+
