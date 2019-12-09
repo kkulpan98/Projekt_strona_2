@@ -5,8 +5,8 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <form id="contact_form" class="was-validated" novalidate onsubmit="return validate_2()">
-                <div class="form-group">
+            <form id="contact_form" novalidate onsubmit="return validate_2()">
+                <div class="form-group was-validated">
                     <label for="firstname">Imię:</label>
                     <input
                             class="form-control"
@@ -19,7 +19,7 @@
                     <div class="valid-feedback">Bardzo dobrze!</div>
                     <div class="invalid-feedback">Pierwsza litera wielka, reszta małe</div>
                 </div>
-                <div class="form-group">
+                <div class="form-group was-validated">
                     <label for="lastname">Nazwisko:</label>
                     <input
                             class="form-control"
@@ -30,9 +30,40 @@
                             pattern="^[A-Z][a-z]+(-[A-Z][a-z]+)*$"
                             required>
                     <div class="valid-feedback">Bardzo dobrze!</div>
-                    <div class="invalid-feedback">Pierwsza litera wielka, reszta małe, człony nazwiska oddzielamy -</div>
+                    <div class="invalid-feedback">Pierwsza litera wielka, reszta małe, człony nazwiska oddzielamy -
+                    </div>
                 </div>
+
                 <div class="form-group">
+                    <label for="exampleFormControlSelect1">Example select</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Example multiple select</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
+                    </label>
+                </div>
+
+                <div class="form-group was-validated">
                     <label for="email">Email:</label>
                     <input
                             class="form-control"
@@ -45,7 +76,7 @@
                     <div class="valid-feedback">Bardzo dobrze!</div>
                     <div class="invalid-feedback">Mail nie jest poprawny</div>
                 </div>
-                <div class="form-group">
+                <div class="form-group was-validated">
                     <label for="phone_number">Numer telefonu:</label>
                     <input
                             class="form-control"
@@ -58,10 +89,10 @@
                     <div class="valid-feedback">Bardzo dobrze!</div>
                     <div class="invalid-feedback">Numer telefonu to 9 cyfr</div>
                 </div>
-                <div class="form-group">
+                <div class="form-group was-validated">
                     <label for="message">Treść wiadmości</label>
                     <textarea class="form-text" id="message" name="message" placeholder="Treść Twojej wiadomości..."
-                              style="width: 100%" ></textarea>
+                              style="width: 100%"></textarea>
                 </div>
                 <input class="form-control" type="submit" value="Wyślij">
             </form>
