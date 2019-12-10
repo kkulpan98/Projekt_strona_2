@@ -151,7 +151,7 @@ body {
     text-align: center;
 }
 
-.container:hover .overlay {
+.img-thumbnail:hover .overlay {
     opacity: 1;
 }
 
