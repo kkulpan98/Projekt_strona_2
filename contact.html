@@ -78,6 +78,34 @@
                     <div class="invalid-feedback">Mail nie jest poprawny</div>
                 </div>
 
+                <div id="friend-firstname-group" class="form-group was-validated">
+                    <label for="friend-firstname">Imię przyjaciela:</label>
+                    <input
+                            class="form-control"
+                            id="friend-firstname"
+                            name="imie"
+                            placeholder="Imie..."
+                            type="text"
+                            pattern="^[A-Z][a-z]?"
+                            required>
+                    <div class="valid-feedback">Bardzo dobrze!</div>
+                    <div class="invalid-feedback">Pierwsza litera wielka, reszta małe</div>
+                </div>
+                <div id="friend-lastname-group" class="form-group was-validated">
+                    <label for="friend-lastname">Nazwisko przyjaciela:</label>
+                    <input
+                            class="form-control"
+                            id="friend-lastname"
+                            name="nazwisko"
+                            placeholder="Nazwisko..."
+                            type="text"
+                            pattern="^[A-Z][a-z]+(-[A-Z][a-z]+)*$"
+                            required>
+                    <div class="valid-feedback">Bardzo dobrze!</div>
+                    <div class="invalid-feedback">Pierwsza litera wielka, reszta małe, człony nazwiska oddzielamy -
+                    </div>
+                </div>
+
                 <div class="form-group was-validated">
                     <label for="email">Email:</label>
                     <input
