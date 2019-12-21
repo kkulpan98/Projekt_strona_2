@@ -2,11 +2,32 @@ $(document).ready(function () {
     prepareContent();
     prepareAjax();
     initTooltips();
+    prepareLightSlider();
 });
 
 function prepareContent() {
     $("#content").load('main.html', function () {
         $("#content").fadeIn(1000);
+    });
+}
+
+function prepareLightSlider() {
+    $('#image-gallery').lightSlider({
+        item: 1,
+        thumbItem: 3,
+        pause: 4000,
+        slideMargin: 0,
+        speed: 1400,
+        auto: true,
+        loop: true,
+        pager: false,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+        onSliderLoad: function () {
+            $('#image-gallery').removeClass('cS-hidden');
+        }
     });
 }
 

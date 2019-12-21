@@ -71,7 +71,7 @@ body {
     color: black !important;
 }
 
-.carousel-inner img {
+.carousel-img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
